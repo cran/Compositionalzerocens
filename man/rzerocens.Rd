@@ -26,7 +26,7 @@ The covariance matrix in \eqn{R^{D-1}}.
 }
 
 \details{
-The function generates compositional data from the cero-censored model (Tsagris, 2026).
+The function generates compositional data from the cero-censored model (Tsagris and Alharbi, 2026).
 The drawback is that only 1 zero, at most, is allowed in each compositional vector.
 }
 
@@ -35,7 +35,7 @@ A numerical matrix with compositional data.
 }
 
 \references{
-Tsagris M. (2026). Modelling structural zeros in compositional data via
+Tsagris M. and Alharbi N. (2026). Modelling structural zeros in compositional data via
 a zero-censored multivariate normal model.
 
 https://arxiv.org/pdf/2208.13073
@@ -47,8 +47,7 @@ R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
 
 \examples{
 mu <- c(0.325, 0.121)
-sigma <- matrix(c(0.149, -0.200,
-                  -0.200,  0.323), 2, 2)
+sigma <- matrix(c(0.149, -0.200, -0.200,  0.323), ncol = 2)
 x <- rzerocens(1000, mu, sigma)
 }
 

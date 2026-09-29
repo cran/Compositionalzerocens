@@ -13,8 +13,8 @@ Modelling Zero Values in Compositional Data Using a Censored Model.
 \tabular{ll}{
 Package: \tab Compositionalzerocens\cr
 Type: \tab Package\cr
-Version: \tab 1.0 \cr
-Date: \tab 2026-08-03 \cr
+Version: \tab 1.1 \cr
+Date: \tab 2026-09-28 \cr
 }
 }
 
@@ -27,7 +27,7 @@ Michail Tsagris <mtsagris@uoc.gr>.
 }
 
 \references{
-Tsagris M. (2026). Modelling structural zeros in compositional data via
+Tsagris M. and Alharbi N. (2026). Modelling structural zeros in compositional data via
 a zero-censored multivariate normal model.
 
 https://arxiv.org/pdf/2208.13073

@@ -1,0 +1,61 @@
+\name{gof.zerocens}
+\alias{gof.zerocens}
+
+\title{
+Goodness-of-fit test for the zero-censored model
+}
+
+\description{
+Goodness-of-fit test for the zero-censored model.
+}
+
+\usage{
+gof.zerocens(x, mu, sigma, B = 999, nsim = 1e+6)
+}
+
+\arguments{
+\item{x}{
+A a matrix with compositional data.
+}
+\item{mu}{
+The mean vector in \eqn{R^{D-1}}.
+}
+\item{sigma}{
+The covariance matrix in \eqn{R^{D-1}}.
+}
+\item{B}{
+The number of bootstrap samples to generate.
+}
+\item{nsim}{
+The number of draws to use in the Monte Carlo estimation of the zero-censoring probability.
+}
+}
+
+\details{
+The function performs a goodness-of-fit test for the observed number of zero patterns
+(Tsagris and Alharbi, 2026).
+}
+
+\value{
+The p-value of the test.
+}
+
+\references{
+Tsagris M. and Alharbi N. (2026). Modelling structural zeros in compositional data via
+a zero-censored multivariate normal model.
+
+https://arxiv.org/pdf/2208.13073
+}
+
+\author{
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+\examples{
+mu <- c(0.325, 0.121)
+sigma <- matrix( c(0.149, -0.200, -0.200,  0.323), ncol = 2)
+x <- rzerocens(100, mu, sigma)
+gof.zerocens(x, mu, sigma, B = 49, nsim = 1e+3)
+}
+
+

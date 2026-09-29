@@ -51,7 +51,7 @@ The estimated covariance matrix.
 }
 
 \references{
-Tsagris M. (2026). Modelling structural zeros in compositional data via
+Tsagris M. and Alharbi N. (2026). Modelling structural zeros in compositional data via
 a zero-censored multivariate normal model.
 
 https://arxiv.org/pdf/2208.13073
